@@ -5,4 +5,7 @@ test("takes a text as paramenter and returns its lenth", () => {
     expect(() => {
         strCounter("Hello, My names are blessed Jason");
     }).toThrow();
+    expect(() => {
+        strCounter("");
+    }).toThrow();
 });
